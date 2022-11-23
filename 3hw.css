@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  background-color: #eee;
+  padding-top: 0;
+  width: 75%;
+  height: 100vh;
+}
+
+.navbar {
+  background-color: #c48dff;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: justify-between;
+}
+.wrap {
+  background-color: none;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar li,
+.navbar a {
+  display: inline-block;
+}
+
+.navbar li {
+  list-style-type: none;
+}
+
+.navbar > li {
+  margin-left: 0;
+}
+.logo {
+  border-radius: 30px;
+}
+.navbar a {
+  padding: 1em;
+  margin-left: 5px;
+  text-decoration: none;
+  background-color: aquamarine;
+  font-weight: bold;
+  color: #fff;
+}
+.poster {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  width: 100%;
+  height: 55vh;
+  /* background-color: antiquewhite;*/
+  background-image: url("https://cbsnews2.cbsistatic.com/hub/i/r/2016/03/01/1f9a234c-a4b4-4eaf-96f1-a16c8dcf298f/thumbnail/1240x828/0c863de4ca18d1177647cdd0a91dd2e3/billionaires2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.poster h1 {
+  text-align: center;
+  font-size: 5vw;
+  color: #fff;
+  text-shadow: 2px 2px 8px #e9d4ff;
+}
+.content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  background-color: #e9d4ff;
+}
+.block {
+  max-width: 270px;
+  max-height: 49vh;
+  padding: 20px;
+  background-color: #fff;
+  margin: 50px 10px 10px 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.photo {
+  width: 70px;
+  height: 70px;
+  top: -10px;
+  right: 20px;
+  margin-top: -30px;
+  margin-left: -30px;
+  background-image: url("https://i2.wp.com/www.nashvillechatterclass.com/wp-content/uploads/2016/02/dreamworks-ceo-says-tesla-model-s-saved-his-life.jpg?fit=3221%2C2415&ssl=1");
+  background-size: cover;
+  border-radius: 50%;
+}
+.num {
+  background-color: aquamarine;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 10px;
+  margin-top: -80px;
+  margin-left: 220px;
+  color: #fff;
+}
+h2,
+p {
+  color: #333;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 100%;
+  height: 10vh;
+  background-color: #c48dff;
+}
+@media only screen and (max-width: 750px) {
+  body {
+    font-size: 0.7em;
+  }
+  article {
+    width: 100%;
+    float: none;
+  }
+
+  article {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+  .poster {
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  body {
+    font-size: 0.7em;
+  }
+  article {
+    width: 100%;
+    float: none;
+  }
+
+  article {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+  .poster {
+    padding: 10px;
+  }
+  .wrap {
+    display: none;
+  }
+}
